@@ -1,0 +1,17 @@
+footer{
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(44, 44, 56));
+    text-align: center;
+}
+
+footer img{
+    width: 140px;
+    height: 100px;
+}
+
+.footerlist{
+    text-align: center;
+    word-spacing: 20px;
+    margin: 0px;
+    background-color: rgb(0, 141, 134);
+    padding: 10px;
+}

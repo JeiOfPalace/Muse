@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="footer.css">
+    <title>FEEDBACK</title>
+
+
+    <style>
+        /*css genèric*/
+
+        body {
+            width: 90%;
+            margin: auto auto;
+            background-color: rgb(19, 19, 19);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        header {
+            background-image: linear-gradient(rgb(44, 44, 56), rgba(0, 0, 0, 0));
+        }
+
+        .barraSuperior {
+            display: grid;
+            align-items: center;
+            margin-bottom: 40px;
+            padding-top: 40px;
+            padding-left: 40px;
+            padding-right: 40px;
+            grid-template-columns: 20% 60% 20%;
+        }
+
+        .logopetit {
+            height: 60px;
+            width: 60px;
+            display: flex;
+        }
+
+        li {
+            display: inline;
+            align-items: center;
+            color: rgb(46, 46, 46);
+        }
+
+        ul {
+            padding: 0px;
+        }
+
+        .menu {
+            text-align: center;
+            word-spacing: 40px;
+
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: aliceblue;
+            opacity: 70%;
+        }
+
+        .menu a:hover {
+            opacity: 100%;
+            padding-bottom: 10px;
+            transition: 0.2s;
+            border-bottom: solid rgb(0, 141, 134) 1px;
+        }
+
+        #language,
+        #profile {
+            height: 25px;
+            width: 25px;
+            margin: 10px;
+            opacity: 70%;
+        }
+
+        #language:hover,
+        #profile:hover {
+            opacity: 100%;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        .icons {
+            text-align: right;
+        }
+
+        .navigation {
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            border-top: white;
+        }
+
+        .cerca {
+            flex-grow: 4;
+            margin: 10px;
+            padding: 1em;
+            border-bottom: solid rgb(0, 141, 134) 1px;
+        }
+
+        .path {
+            flex-grow: 1;
+            margin: 10px;
+            padding: 1em;
+            text-align: right;
+            border-bottom: solid rgb(255, 220, 66) 1px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        /*css específic*/
+
+        main {
+            background-color: rgb(44, 44, 56);
+            padding: 2%;
+            margin: 20px auto;
+            height: auto;
+            display: flex;
+        }
+
+        main img {
+            border-radius: 50%;
+            height: auto;
+            display: block;
+        }
+
+        aside {
+            height: auto;
+            width: 50%;
+        }
+
+        .text {
+            color: black;
+            background-color: rgb(255, 220, 66);
+            -moz-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.37);
+            -webkit-box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.37);
+            box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.37);
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: 1.5px;
+            font-size: 18px;
+            text-align: justify;
+            margin: 20px 40px 20px 20px;
+            padding: 35px;
+            height: auto;
+            position: relative;
+        }
+
+        .forum {
+            height: auto;
+            width: 50%;
+            margin: 0;
+            padding: 20px;
+            padding-top: 0;
+        }
+
+        h2 {
+            margin-top: 0;
+            padding-bottom: 5px;
+            border-bottom: outset white 3px;
+        }
+
+        .perfil {
+            margin: 10px auto;
+            padding: 13px;
+            border-radius: 5px;
+        }
+
+        .perfil:nth-of-type(4) {
+            margin-bottom: 43px;
+        }
+
+        .perfil:nth-last-of-type(even) {
+            background-color: rgba(0, 141, 134, 0.253)
+        }
+
+        .perfil:nth-last-of-type(odd) {
+            background-color: rgba(0, 255, 242, 0.253)
+        }
+
+        .perfil h6 {
+            font-size: 17px;
+            margin: 5px auto;
+        }
+
+        .perfil p {
+            font-size: 12px;
+            margin: 5px auto;
+        }
+
+        .enterText {
+            color: black;
+            background-color: white;
+            border-radius: 15px;
+            padding: 15px;
+            height: 20px;
+            width: 100px;
+            transition: .3s;
+        }
+
+        .enterText:hover {
+            transition: .4s;
+            width: 605px;
+
+        }
+
+        .enterText p {
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="barraSuperior">
+            <div class="logopetit">
+                <img class="logopetit" src="logo/logo_w.png">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">INICI</a></li>
+                    <li><a href="discoteca.html">DISCOTECA</a></li>
+                    <li><a href="coneixnos.html">CONEIX-NOS</a></li>
+                    <li><a href="feedback.html">FEEDBACK</a></li>
+                    <li><a href="contactans.html">CONTACTA'NS</a></li>
+                </ul>
+            </div>
+            <div class="icons">
+                <li><a href="#"><img id="language" src="icons/language.png"></a></li>
+                <li><a href="#"><img id="profile" src="icons/profile.png"></a></li>
+            </div>
+        </nav>
+        <div class="barraInferior">
+            <h1>FEEDBACK</h1>
+            <div class="navigation">
+                <p class="cerca">cerca...</p>
+                <p class="path"><a href="index.html">Inici</a> · <a href="feedback.html">feedback</a></p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <aside>
+            <p class="text">
+                No ens cansem de convidar-vos a provar la nostra nova eina la qual permet
+                innovar diàriament el nostre site. És senzill, emplena el formulari per
+                poder compartir la teva experiència. D'aquesta manera podrem tenir el
+                coneixement més proper i transparent possible, gràcies a tu!
+            </p>
+        </aside>
+        <div class="forum">
+            <h2>Forum</h2>
+            <div class="perfil">
+                <img src="perfils/user1.png">
+                <h6>ZaHeuei</h6>
+                <p>This site has helped me to find all albums worldwide! Thanks!! :)
+                </p>
+            </div>
+            <div class="perfil">
+                <img src="perfils/user2.png">
+                <h6>QueenOfTheNight</h6>
+                <p>Está bien, ¡lo recomiendo! Me apetecería poder compartir un album que encontré
+                    hace un mes por las plataformas. ¿Alguien sabe como lo puedo enviar? Graciaas
+                </p>
+            </div>
+            <div class="perfil">
+                <img src="perfils/user3.png">
+                <h6>Sandraa677</h6>
+                <p>Great!! I've discovered a mount of songs I have never listened to. Gogo
+                </p>
+            </div>
+            <div class="perfil">
+                <img src="perfils/user4.png">
+                <h6>Carlos99</h6>
+                <p>@Maario677: sí que es pot fer, però crec que l'última versió ha canviat.
+                    Ho miro!
+                </p>
+            </div>
+            <div class="enterText">
+                <p>Comenta aquí</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <ul class="socialmedia">
+            <li><img src="xarxes/spotify.png"></li>
+            <li><img src="xarxes/applemusic.png"></li>
+            <li><img src="xarxes/soundcloud.png"></li>
+            <li><img src="xarxes/facebook.png"></li>
+            <li><img src="xarxes/youtube.png"></li>
+            <li><img src="xarxes/instagram.png"></li>
+            <li><img src="xarxes/facebook.png"></li>
+        </ul>
+        <ul class="footerlist">
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Ajuda</a></li>
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="#">Polítiques</a></li>
+            <li><a href="#">Privacitat</a></li>
+            <li><a href="#">Credits</a></li>
+            <li><a href="#">&copy;2019</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="footer.css">
+    <title>DISCOTECA</title>
+
+    <style>
+        /*css genèric*/
+
+        body {
+            width: 90%;
+            margin: auto auto;
+            background-color: rgb(19, 19, 19);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        header {
+            background-image: linear-gradient(rgb(44, 44, 56), rgba(0, 0, 0, 0));
+        }
+
+        .barraSuperior {
+            display: grid;
+            align-items: center;
+            margin-bottom: 40px;
+            padding-top: 40px;
+            padding-left: 40px;
+            padding-right: 40px;
+            grid-template-columns: 20% 60% 20%;
+        }
+
+        .logopetit {
+            height: 60px;
+            width: 60px;
+            display: flex;
+        }
+
+        li {
+            display: inline;
+            align-items: center;
+            color: rgb(46, 46, 46);
+        }
+
+        ul {
+            padding: 0px;
+        }
+
+        .menu {
+            text-align: center;
+            word-spacing: 40px;
+
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: aliceblue;
+            opacity: 70%;
+        }
+
+        .menu a:hover {
+            opacity: 100%;
+            padding-bottom: 10px;
+            transition: 0.1s;
+            border-bottom: solid rgb(0, 141, 134) 1px;
+        }
+
+        .logogran {
+            height: 150px;
+            width: 150px;
+            display: block;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 5px;
+        }
+
+        #language,
+        #profile {
+            height: 25px;
+            width: 25px;
+            margin: 10px;
+            opacity: 70%;
+        }
+
+        #language:hover,
+        #profile:hover {
+            opacity: 100%;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        .icons {
+            text-align: right;
+        }
+
+        .navigation {
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            border-top: white;
+        }
+
+        .cerca {
+            flex-grow: 4;
+            margin: 10px;
+            padding: 1em;
+            border-bottom: solid rgb(0, 141, 134) 1px;
+        }
+
+        .path {
+            flex-grow: 1;
+            margin: 10px;
+            padding: 1em;
+            text-align: right;
+            border-bottom: solid rgb(255, 220, 66) 1px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /*css específic*/
+
+        main {
+            background-color: rgb(28, 28, 36);
+            margin: 20px auto;
+            height: auto;
+        }
+
+        .discs {
+            border-spacing: 90px;
+            display: table;
+            width: 85%;
+            margin-left: 200px;
+        }
+
+        td {
+            border-bottom: solid white 1px;
+        }
+
+        h5 {
+            text-align: justify;
+            margin-bottom: 0px;
+            color: rgb(3, 185, 176);
+        }
+
+        p {
+            text-align: justify;
+            margin-top: 0px;
+            font-size: 1em;
+        }
+
+        aside {
+            height: 2000px;
+            width: 0;
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 7%;
+            margin-top: 335px;
+            line-height: 2em;
+            overflow: hidden;
+            transition: 0.4s;
+        }
+
+        aside a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: whitesmoke;
+            display: block;
+            font-size: 1em;
+            transition: 0.3s;
+            opacity: 50%;
+        }
+
+        aside a:hover {
+            opacity: 100%;
+            padding-left: 40px;
+        }
+
+        aside .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        img:hover {
+            transition: 0.6s;
+            opacity: 80%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="barraSuperior">
+            <div class="logopetit">
+                <img class="logopetit" src="logo/logo_w.png">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">INICI</a></li>
+                    <li><a href="discoteca.html">DISCOTECA</a></li>
+                    <li><a href="coneixnos.html">CONEIX-NOS</a></li>
+                    <li><a href="feedback.html">FEEDBACK</a></li>
+                    <li><a href="contactans.html">CONTACTA'NS</a></li>
+                </ul>
+            </div>
+            <div class="icons">
+                <li><a href="#"><img id="language" src="icons/language.png"></a></li>
+                <li><a href="#"><img id="profile" src="icons/profile.png"></a></li>
+            </div>
+        </nav>
+        <div class="barraInferior">
+            <h1>DISCOTECA</h1>
+            <div class="navigation">
+                <p class="cerca">cerca...</p>
+                <p class="path"><a href="index.html">Inici</a> · <a href="discoteca.html">discoteca</a></p>
+            </div>
+        </div>
+    </header>
+
+    <p id="genere" style="font-size: 1em; cursor: pointer" onclick="openNav()">&#9776; Gèneres</p>
+
+    <main>
+        <table class="discs">
+            <tr>
+                <td><a class="disc" href="#"><img src="discs\queen.jpg" title="A Night At The Opera">
+                        <h5>A Night At The Opera</h5>
+                    </a><br>
+                    <p>Queen</p>
+                </td>
+                <td><a class="disc" href="#"><img src="discs\aretha.jpg" title="The Queen Of Soul">
+                        <h5>The Queen Of Soul</h5>
+                    </a><br>
+                    <p>Aretha Franklin</p>
+                </td>
+                <td><a class="disc" href="#"><img src="discs\stevieWonder.jpg" title="Songs In The Key Of Life">
+                        <h5>Songs In The Key Of Life</h5>
+                    </a><br>
+                    <p>Stevie Wonder</p>
+                </td>
+            </tr>
+            <tr>
+                <td><a class="disc" href="#"><img src="discs\panic.jpg" title="Panic">
+                        <h5>Panic</h5>
+                    </a><br>
+                    <p>Caravan Palace</p>
+                </td>
+                <td><a class="disc" href="#"><img src="discs\pinkfloyd.jpg" title="The Dark Side Of The Moon">
+                        <h5>The Dark Side Of The Moon</h5>
+                    </a><br>
+                    <p>Pink Floyd</p>
+                </td>
+                <td><a class="disc" href="#"><img src="discs\marvinGaye.jpg" title="Midnight Love">
+                        <h5>Midnight Love</h5>
+                    </a><br>
+                    <p>Marvin Gaye</p>
+                </td>
+            </tr>
+            <tr>
+                <td><a class="disc" href="#"><img src="discs\xcape.jpg" title="XSCAPE">
+                        <h5>XCAPE</h5>
+                    </a><br>
+                    <p>Michael Jackson</p>
+                </td>
+                <td><a class="disc" href="#"><img src="discs\sting.jpg" title="Fields Of Gold">
+                        <h5>Fields Of Gold</h5>
+                    </a><br>
+                    <p>Sting</p>
+                </td>
+                <td><a class="disc" href="#"><img src="discs\amyWinehouse.jpg" title="Back To Black">
+                        <h5>Back To Black</h5>
+                    </a><br>
+                    <p>Amy Winehouse</p>
+                </td>
+            </tr>
+        </table>
+    </main>
+
+    <aside>
+        <ul>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <li><a href="#">Alternativa</a></li>
+            <li><a href="#">Blues</a></li>
+            <li><a href="#">BSO</a></li>
+            <li><a href="#">Clàssica</a></li>
+            <li><a href="#">Country</a></li>
+            <li><a href="#">Disco</a></li>
+            <li><a href="#">Drum and Bass</a></li>
+            <li><a href="#">Electro</a></li>
+            <li><a href="#">Esdeveniments</a></li>
+            <li><a href="#">Flamenco</a></li>
+            <li><a href="#">Folklore</a></li>
+            <li><a href="#">Funk</a></li>
+            <li><a href="#">Garage</a></li>
+            <li><a href="#">Gospel</a></li>
+            <li><a href="#">Hip Hop</a></li>
+            <li><a href="#">House</a></li>
+            <li><a href="#">Indie</a></li>
+            <li><a href="#">Jazz</a></li>
+            <li><a href="#">Latin</a></li>
+            <li><a href="#">Metal</a></li>
+            <li><a href="#">New Age</a></li>
+            <li><a href="#">Pop</a></li>
+            <li><a href="#">Reggae</a></li>
+            <li><a href="#">Rock</a></li>
+            <li><a href="#">Rock and Roll</a></li>
+            <li><a href="#">R&B</a></li>
+            <li><a href="#">Salsa</a></li>
+            <li><a href="#">Ska</a></li>
+            <li><a href="#">Soul</a></li>
+            <li><a href="#">Techno</a></li>
+            <p>_____________</p>
+            <li><a href="#">Altres</a></li>
+        </ul>
+    </aside>
+
+    <footer>
+        <ul class="socialmedia">
+            <li><img src="xarxes/spotify.png"></li>
+            <li><img src="xarxes/applemusic.png"></li>
+            <li><img src="xarxes/soundcloud.png"></li>
+            <li><img src="xarxes/facebook.png"></li>
+            <li><img src="xarxes/youtube.png"></li>
+            <li><img src="xarxes/instagram.png"></li>
+            <li><img src="xarxes/facebook.png"></li>
+        </ul>
+        <ul class="footerlist">
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Ajuda</a></li>
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="#">Polítiques</a></li>
+            <li><a href="#">Privacitat</a></li>
+            <li><a href="#">Credits</a></li>
+            <li><a href="#">&copy;2019</a></li>
+        </ul>
+    </footer>
+
+</body>
+<script>
+    function openNav() {
+        document.querySelector("aside").style.width = "250px";
+        document.querySelector("main").style.height = "1600px";
+    }
+
+    function closeNav() {
+        document.querySelector("aside").style.width = "0";
+        document.querySelector("main").style.marginbottom = "0";
+    }
+</script>
+
+</html>

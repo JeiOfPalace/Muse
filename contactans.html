@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="footer.css">
+    <title>CONTACTA'NS</title>
+    <style>
+        /*css genèric*/
+
+        body {
+            width: 90%;
+            margin: auto auto;
+            background-color: rgb(19, 19, 19);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: white;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        header {
+            background-image: linear-gradient(rgb(44, 44, 56), rgba(0, 0, 0, 0));
+        }
+
+        .barraSuperior {
+            display: grid;
+            align-items: center;
+            margin-bottom: 40px;
+            padding-top: 40px;
+            padding-left: 40px;
+            padding-right: 40px;
+            grid-template-columns: 20% 60% 20%;
+        }
+
+        .logopetit {
+            height: 60px;
+            width: 60px;
+            display: flex;
+        }
+
+        li {
+            display: inline;
+            align-items: center;
+            color: rgb(46, 46, 46);
+        }
+
+        ul {
+            padding: 0px;
+        }
+
+        .menu {
+            text-align: center;
+            word-spacing: 40px;
+
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: aliceblue;
+            opacity: 70%;
+        }
+
+        .menu a:hover {
+            opacity: 100%;
+            padding-bottom: 10px;
+            transition: 0.1s;
+            border-bottom: solid rgb(0, 141, 134) 1px;
+        }
+
+        #language,
+        #profile {
+            height: 25px;
+            width: 25px;
+            margin: 10px;
+            opacity: 70%;
+        }
+
+        #language:hover,
+        #profile:hover {
+            opacity: 100%;
+        }
+
+        nav {
+            display: flex;
+        }
+
+        .icons {
+            text-align: right;
+        }
+
+        .navigation {
+            display: flex;
+            align-items: center;
+            margin: 10px;
+            border-top: white;
+        }
+
+        .cerca {
+            flex-grow: 4;
+            margin: 10px;
+            padding: 1em;
+            border-bottom: solid rgb(0, 141, 134) 1px;
+        }
+
+        .path {
+            flex-grow: 1;
+            margin: 10px;
+            padding: 1em;
+            text-align: right;
+            border-bottom: solid rgb(255, 220, 66) 1px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        /*css específic*/
+
+        #nom,
+        #cognom,
+        #email,
+        #assumpte,
+        #missatge {
+            background-color: rgb(82, 110, 109);
+            color: white;
+            padding: 1em;
+            margin: 15px 0 0 50px;
+            border-radius: 7px;
+        }
+
+        #missatge {
+            padding-bottom: 200px;
+            margin-bottom: 40px;
+        }
+
+        main {
+            width: 45%;
+            margin: 30px 20px auto 0px;
+            height: auto;
+        }
+
+        .send{
+            margin: 20px 0 0 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="barraSuperior">
+            <div class="logopetit">
+                <img class="logopetit" src="logo/logo_w.png">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">INICI</a></li>
+                    <li><a href="discoteca.html">DISCOTECA</a></li>
+                    <li><a href="coneixnos.html">CONEIX-NOS</a></li>
+                    <li><a href="feedback.html">FEEDBACK</a></li>
+                    <li><a href="contactans.html">CONTACTA'NS</a></li>
+                </ul>
+            </div>
+            <div class="icons">
+                <li><a href="#"><img id="language" src="icons/language.png"></a></li>
+                <li><a href="#"><img id="profile" src="icons/profile.png"></a></li>
+            </div>
+        </nav>
+        <div class="barraInferior">
+            <h1>CONTACTA'NS</h1>
+            <div class="navigation">
+                <p class="cerca">cerca...</p>
+                <p class="path"><a href="index.html">Inici</a> · <a href="contactans.html">contacta'ns</a></p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div id="nom">Nom</div>
+        <div id="cognom">Cognoms</div>
+        <div id="email">Correu electrònic</div>
+        <div id="assumpte">Assumpte</div>
+        <div id="missatge">Contingut</div>
+    </main>
+
+    <div class="send"><button id=#boto>Enviar</button></div>
+
+    <footer>
+        <ul class="socialmedia">
+            <li><img src="xarxes/spotify.png"></li>
+            <li><img src="xarxes/applemusic.png"></li>
+            <li><img src="xarxes/soundcloud.png"></li>
+            <li><img src="xarxes/facebook.png"></li>
+            <li><img src="xarxes/youtube.png"></li>
+            <li><img src="xarxes/instagram.png"></li>
+            <li><img src="xarxes/facebook.png"></li>
+        </ul>
+        <ul class="footerlist">
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Partners</a></li>
+            <li><a href="#">Ajuda</a></li>
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="#">Polítiques</a></li>
+            <li><a href="#">Privacitat</a></li>
+            <li><a href="#">Credits</a></li>
+            <li><a href="#">&copy;2019</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
